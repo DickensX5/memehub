@@ -1,0 +1,157 @@
+
+:root{
+  
+   
+   --border: darkcyan;
+  /* Backgrounds */
+  --bg: #0A0B0F;          /* main black */
+  --surface: #141518;     /* cards */
+  --surface-2: #1A1B20;   /* sidebar */
+  --border2: #25272D;
+
+  /* Green accent */
+  --primary: #66BC31;     /* main green */
+  --primary-dark: #45802C;
+  --primary-light: #87BD69;
+
+  /* Text */
+  --text: #F5F5F5;
+  --text-secondary: #B5B8BE;
+  --text-muted: #7B8088;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body,.mainpg{
+  background:#0A0B0F;
+  color:#F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.screen{
+  background:#0A0B0F;
+  color:#F5F5F5;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+}
+.screen.active{
+  display: flex;
+}
+.lpg{
+  background:#141518;
+  border: 0.1vw solid var(--border);
+  box-shadow: 0 0 70vw var(--border);
+  border-radius:3vw;
+  width: 80%;
+  min-height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lpg input, .lpg textarea{
+  margin: 0.4em;
+  height: 10%;
+  width: 75%;
+  border: none;
+  border-bottom: 0.8vw solid var(--primary-light);
+  background: none;
+  font-size: 4vw ;
+  color: var(--text);
+  transition: all 0.7s ease ;
+}
+
+.lpg input:focus, .lpg textarea:focus{
+  outline: none;
+  border-bottom: 0.8vw solid var(--primary-dark);
+}
+.lpgh{
+ color: var(--primary-light);
+ background: none;
+font-size: 6vw;
+ margin: 0.4em;
+  
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 11vw;
+  border-radius: 2vw;
+  background: var(--primary);
+  border: 0.7vw solid var(--border2);
+  font-size: 3.5vw;
+  color: var(--text);
+  transition: all 0.1s ease;
+}
+.btn:hover{
+  background: var(--primary-light);
+}
+
+.btn:active{
+  background: var(--primary-dark);
+}
+
+.lpg p{
+  margin: 0.2em;
+  text-decoration: underline;
+  color: var(--primary-dark);
+  font-size: 4vw;
+  background: none;
+}
+
+.logo{
+ font-size: 10vw; 
+ font-weight: 900;
+ margin: 0.2em;
+ display: flex;
+ gap: 1vw;
+}
+
+.memel{
+  color:var(--primary-light);
+  text-shadow: 0 0 4vw var(--primary-light);
+}
+.hub{
+  background: var(--primary-light);
+  color: var(--border2);
+  border-radius: 0.5vw;
+}
+.lpg label{
+  font-size: 5vw;
+  color: var(--primary-light);
+  align-self: flex-start;
+  margin-left: 1.7em;
+}
+
+.lpg h2{
+  font-weight: 300;
+  font-size: 3.5vw;
+  color: var(--primary);
+  background: none;
+  border: none;
+}

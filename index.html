@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>memeHuB ,memes ,laugh,enjoy,collaborate,post,comment,vote</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="mainpg">
+  <section class="log screen active">
+   <form class="loginpg lpg" method="post">
+     
+     <div class="logo">
+       <span class="memel">meme</span>
+       <span class="hub">HUB</span>
+     </div>
+     
+     <h1 class="loginheader lpgh">
+       LOGIN CREDENTIALS
+     </h1>
+     
+     <label for="userName">Username</label>
+      <input type="text" id="userName" placeholder="Enter username or email" required>
+      
+     <label for="userPassword">Password</label>
+      <input type="password" id="userPassword" placeholder="Enter password" required>
+      
+     <p class="resetpas">forgot password</p>
+    
+     <button type="submit" class="loginbtn btn">LOGIN</button>
+    
+     <p class="s-sign">register new account</p>
+    
+    </form>
+  </section>
+  
+  <section class="sig screen">
+  <form class="signpg lpg" method="post">
+    
+    <div class="logo">
+      <span class="memel">meme</span>
+      <span class="hub">HUB</span>
+    </div>
+
+    <h2 class="desc">welcome connect laugh and enjoy</h2>
+    
+    <h1 class="signheader lpgh">ENTER CREDENTIALS</h1>
+    
+    <label for="newemail">Email</label>
+    <input type="email" id="newemail" placeholder="Enter email" required>
+   
+    <label for="newuserPassword">Password</label>
+    <input type="password" id="newuserPassword" placeholder="Enter password" required>
+  
+    <label for="pascomfirm">Confirm password</label>
+    <input type="password" id="pascomfirm" placeholder="Confirm password" required>
+  
+    <button type="submit" class="signbtn btn">SIGN UP</button>
+  
+    <p class="s-login">login existing account</p>
+  </form>
+</section>
+   
+   
+   <section class="apcodes screen">
+     <form class="apcodepg lpg" method="post">
+      
+     <h1 class="apcodeheader lpgh">
+       APPROVAL CODE 
+     </h1>
+     
+      <label for="apcodei">ENTER CODE</label>
+      <input type="number" id="apcodei" placeholder="Enter code" required>
+    
+      <button type="submit" class="aprovecode btn">CONFIRM</button>
+    
+      <h2 class="desc" style ="padding: 0.4em;">look the code at gmail app, reflesh if not found, check the spamfolder or try to resend your email, make sure you enter your valid email.</h2>
+     
+     <p class="emailapprove">wrong email</p>
+    </form>
+   </section>
+   
+   <section class="usernameset screen">
+  <form class="usernamesetpg lpg" method="post">
+
+    <h1 class="usernamesetheader lpgh">CHOOSE USERNAME</h1>
+
+    <h2 class="desc">this is how others will see you on MemeHub</h2>
+
+    <label for="usernameinput">Username</label>
+    <input type="text" id="usernameinput" placeholder="Enter username" required>
+
+    <!-- Error panel — inaonekana tu username ikichukuliwa -->
+    <p class="username-error desc" style="color: red; display: none;">
+      ⚠️ Username already in use
+    </p>
+
+    <button type="submit" class="usernamebtn btn">CONFIRM</button>
+
+  </form>
+</section>
+   <section class="sencodef screen">
+     
+    <form class="sendcodepg lpg" method="post">
+      
+     <h1 class="sendcodeheader lpgh">
+       SEND RESET EMAIL
+     </h1>
+     
+      <label for="resetemail">Email</label>
+      <input type="email" id="resetemail" placeholder="Enter email" required>
+    
+      <button type="submit" class="sendemail btn">SEND</button>
+    
+     <h2 class="desc" style ="padding: 0.4em;">look the code at gmail app, reflesh if not found, check the spamfolder or try to resend your email, make sure you enter your valid email.</h2>
+    </form>
+   </section>
+   
+   <section class="resetcode screen">
+ <form class="entercodepg lpg" method="post">
+      
+     <h1 class="entercodeheader lpgh">
+        
+     </h1>
+     
+      <label for="resetcode">ENTER CODE</label>
+      <input type="number" id="resetcode" placeholder="Enter code" required>
+    
+      <button type="submit" class="sendcode btn">CONFIRM</button>
+    
+     <h2 class="desc" style ="padding: 0.4em;">look the code at gmail app, reflesh if not found, check the spamfolder or try to resend your email, make sure you enter your valid email.</h2>
+     
+     <p class="coderesend">re-enter email and resend code</p>
+    </form>
+   </section>
+   
+   <section class="resnewpas screen ">
+    <form class="resnewpaspg lpg" method="post">
+  
+     <h1 class="resnewpasheader lpgh">
+       ENTER NEW PASWORD
+     </h1>
+     
+     
+     <label for="resnewpasi">New password</label>
+     <input type="password" id="resnewpasi" placeholder="Enter new password" required>
+    
+     <label for="renewpascomfirm">Comfirm new password</label>
+     <input type="password" id="resnewpascomfirm" placeholder="comfirm new password" required>
+    
+     <button type="submit" class="resnewpasbtn btn">CONFIRM</button>
+    </form>
+   </section>
+   
+   <section class="requestrev screen">
+    <form class="requestrevpg lpg" method="post">
+     
+     <div class="logo">
+      <span class="memel">meme</span>
+      <span class="hub">HUB</span>
+     </div>
+  
+ 
+     <h2 class="desc">this may take 3-5 working days</h2>
+    
+     <h1 class="requestrevheader lpgh">
+       REQUEST REVIEW 
+     </h1>
+     
+      <label for="requestrevcred">Email</label>
+      <input type="text" id="requestrevcred" placeholder="Enter email or username" required>
+     
+     <label for="revi">Review request message</label>
+     <textarea name="revi" id="revi" cols="30" rows="3" placeholder="write review request"></textarea>
+    
+    
+     <button type="submit" class="requestrevbtn btn">SEND</button>
+    
+    </form>
+   </section>
+  </main>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html>
