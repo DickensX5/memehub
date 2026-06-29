@@ -1,7 +1,7 @@
 
 :root{
   
-   
+   --blur: rgba(254, 254, 254, 0.2);
    --border: darkcyan;
   /* Backgrounds */
   --bg: #0A0B0F;          /* main black */
@@ -239,7 +239,6 @@ font-size: 6vw;
   justify-content: center;
   align-items: center;
   border: 0.05vw solid var(--border);
-  box-shadow: 0 0 1vw var(--primary-light) ;
   border-radius: 2vw;
   padding: 2vw;
   margin: 1em 0 1em 0;
@@ -247,6 +246,16 @@ font-size: 6vw;
   height: 50%;
   text-align: center;
 }
+
+.card:hover{
+  box-shadow: 0 0 1vw var(--primary-light) ;
+}
+
+.card:active{
+  background: var(--blur);
+}
+
+
 
 .ficon{
   width: 4em;
@@ -274,6 +283,11 @@ font-size: 6vw;
   align-items: center;
   font-size: 3vw;
   color: var(--primary);
+  transition:all 2s ease;
+}
+
+.prefot:hover{
+  color: red;
 }
 
 .launchtime{
@@ -285,6 +299,14 @@ font-size: 6vw;
   align-items: center;
  border: 0.2vw solid var(--border);
   border-radius: 2vw;
+}
+
+.launchtime:hover{
+  background: var(-blur);
+}
+
+.launchtime:active{
+  background: var(--blur);
 }
 
 .days{
