@@ -362,7 +362,10 @@ font-size: 6vw;
   opacity: 0.4;
 }
 
-.feed{
+.subscreen{
+  display: none;
+  flex-direction: column;
+  align-items: center;
   margin-top: 5vw;
   align-items: center;
   min-height: 100%;
@@ -372,6 +375,10 @@ font-size: 6vw;
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
+}
+
+.subscreen.active{
+  display: flex;
 }
 
 .Meme{
