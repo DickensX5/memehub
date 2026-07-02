@@ -366,7 +366,7 @@ font-size: 6vw;
   display: none;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vw;
+  margin-top: 21vw;
   align-items: center;
   height: auto;
   flex-direction: column;
@@ -393,6 +393,7 @@ font-size: 6vw;
   border-radius: 3vw;
   margin: 1vw;
   background: rgba(33, 213, 70, 0.2);
+  z-index: 2;
   
 }
 
@@ -485,6 +486,7 @@ font-size: 6vw;
   display: flex ;
   align-items: center;
   justify-content: center;
+  z-index: 20;
 }
 
 .navigator button{
@@ -499,9 +501,9 @@ font-size: 6vw;
   position: relative;
 }
 
-.navigator .icons{
+.topbar .icons,.navigator .icons{
   color: var(--primary-light);
-  width: 100%;
+  width: 50%;
   height: 95%;
   fill: none;
 }
@@ -540,4 +542,105 @@ font-size: 6vw;
 }
 .bu:active{
   background: var(--blur);
+}
+
+.topbar .logo{
+  height: 9vw;
+  font-size: 8vw;
+  margin-left: 3vw;
+}
+.topbar{
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  border-bottom: 0.3vw solid var(--border);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: black;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.topbar button{
+  height: 13vw;
+  width: 13vw;
+  font-size: 4vw;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  color: white;
+  position: relative;
+  margin-top: 3vw;
+  margin-right: 3vw;
+}
+
+.sidebar{
+  position: fixed;
+  background: black;
+  border: 0.3vw solid var(--border);
+  width: 0vw;
+  height: 0vw;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  top: 69vh;
+  left: 60%;
+  transition: all 2s ease;
+  z-index: 1;
+}
+
+.sidebar.active{
+  /*display: flex;*/
+  opacity:1;
+  height: 35vw;
+  width: 40vw;
+  z-index: 3;
+}
+
+.sidebar button{
+  height: 40%;
+  background: none;
+  font-size: 4vw;
+  border: none;
+  border-bottom: 0.2vw solid var(--border);
+  color: var(--primary);
+  font-weight: 900;
+}
+
+
+
+.sidebar button:hover{
+  background: var(--blur);
+}
+.sidebar button:active{
+  background: var(--brul);
+}
+
+.topbar button:hover{
+  background: var(--blur);
+}
+
+.topbar button:active{
+  background:var(--blur)
+}
+
+.dmbadge{
+  background: var(--primary-light);
+  font-size: 3.1vw;
+  color: black;
+  width: 6vw;
+  height: 4vw;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45%;
+  top: 1.5vw;
+  left: 5.6vw;
+}
+
+.dmbadg.dmbadge.active{
+  display: flex;
 }
